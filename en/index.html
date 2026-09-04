@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CutOut Seller — Privacy Policy (English)</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 3rem 2.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: #eef2ff;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.825rem;
+      border-radius: 9999px;
+    }
+    .lang-switch a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .lang-switch a:hover { text-decoration: underline; }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      border-left: 4px solid var(--primary);
+      padding-left: 0.75rem;
+    }
+    p, ul, ol {
+      margin-bottom: 1rem;
+      color: #334155;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .callout {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+    }
+    .callout p {
+      margin-bottom: 0.5rem;
+    }
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+    .contact-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-link:hover {
+      text-decoration: underline;
+      color: var(--primary-dark);
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <span class="badge">CutOut Seller</span>
+        <div class="lang-switch"><a href="../th/">&larr; สลับเป็นภาษาไทย</a></div>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <strong>Effective Date:</strong> September 4, 2026 &bull; 
+        <strong>App Version:</strong> CutOut Seller v1.3.0 (versionCode: 4) &bull;
+        <strong>Developer:</strong> Vrit
+      </div>
+    </div>
+
+    <h2>1. Introduction and Philosophy</h2>
+    <p>CutOut Seller values user privacy and data security above all else. The application is built on an <strong>On-Device First</strong> architecture, ensuring online sellers and creators can remove backgrounds, edit product photos, and prepare marketplace listings quickly and securely without relying on cloud processing or transmitting user media to external servers.</p>
+
+    <h2>2. Data Processing Architecture</h2>
+    <p>CutOut Seller operates under the following data principles:</p>
+    <ul>
+      <li><strong>Product Photos & Media:</strong> Photos imported from the device gallery or captured using the camera are processed strictly inside local device memory. <em>Zero Uploads:</em> CutOut Seller does not upload original photos, segmentation masks, or edited deliverables to CutOut Seller servers or any third-party cloud infrastructure.</li>
+      <li><strong>On-Device Artificial Intelligence:</strong> Background removal AI models (IS-Net and U²-Net) are bundled directly inside the application installation package. Neural network inference is executed 100% locally on your device CPU via ONNX Runtime.</li>
+      <li><strong>Local Projects and Autosaves:</strong> User projects, editing history, canvas states, and crash recovery autosaves are stored solely in the application's local sandbox (Local Sembast Database). No cloud storage is utilized.</li>
+      <li><strong>Preferences and Settings:</strong> User preferences such as language, theme mode, default quality, and export format are stored in local device preferences.</li>
+    </ul>
+
+    <h2>3. Device Permissions</h2>
+    <p>CutOut Seller requests only minimal, purpose-specific permissions based strictly on user requests:</p>
+    <ul>
+      <li><strong>Camera (CAMERA):</strong> Requested solely when you choose to take a product photo directly within the app. Permission can be granted or revoked at any time via system settings.</li>
+      <li><strong>Photos / Media Picker (Scoped Storage):</strong> Employs the standard Android system photo picker to let users select specific images. The app only accesses files explicitly chosen by the user and never requests broad device storage permissions (no <code>MANAGE_EXTERNAL_STORAGE</code>).</li>
+      <li><strong>Network / Internet:</strong> The release version of the application functions 100% offline and does not require internet connectivity for photo editing operations.</li>
+    </ul>
+
+    <h2>4. User Accounts</h2>
+    <p>CutOut Seller requires <strong>no user accounts</strong>. No registration, login, phone number, email address, or identity verification is required to use the application.</p>
+
+    <h2>5. Analytics, Advertising & Telemetry</h2>
+    <ul>
+      <li><strong>Zero Third-Party Analytics:</strong> CutOut Seller does not integrate Google Analytics, Firebase Analytics, Mixpanel, or any behavioral tracking SDKs.</li>
+      <li><strong>Zero Advertising:</strong> The app contains no third-party ad networks or ad identifiers.</li>
+      <li><strong>Zero Remote Telemetry:</strong> Crash recovery is handled locally; error logs are never transmitted to remote servers.</li>
+    </ul>
+
+    <h2>6. Payment Information</h2>
+    <p>In version v1.3.0, the "CutOut Seller Pro" tier is marked as <strong>Coming Soon</strong>. The app contains no payment gateway, no Google Play Billing library, and does not collect any credit card, bank, or transaction data.</p>
+
+    <h2>7. Data Retention & Deletion</h2>
+    <p>Users retain complete control over all data generated and stored on the device:</p>
+    <ol>
+      <li><strong>Single Project Deletion:</strong> Remove individual projects from the project gallery at any time.</li>
+      <li><strong>Bulk Clear:</strong> Use the "Delete all projects" or "Clear export cache" options located in Settings.</li>
+      <li><strong>App Clear Data / Uninstall:</strong> Clearing app data in system settings or uninstalling CutOut Seller completely deletes all locally stored projects, database files, and caches via standard Android sandbox cleanup.</li>
+    </ol>
+
+    <h2>8. Children's Privacy</h2>
+    <p>CutOut Seller is a general-purpose product photo editing utility. It does not knowingly collect or solicit personal data from children under the age of 13.</p>
+
+    <h2>9. Updates to This Policy</h2>
+    <p>Should future versions introduce cloud synchronization, accounts, or payment options, this Privacy Policy will be revised and posted transparently in advance within the application and on the Google Play Store listing.</p>
+
+    <h2>10. Contact Information</h2>
+    <div class="callout">
+      <p><strong>Developer:</strong> Vrit</p>
+      <p><strong>Contact / Support Email:</strong> <a href="mailto:weeisweeris@gmail.com" class="contact-link">weeisweeris@gmail.com</a></p>
+      <p><strong>Business Address:</strong> 113/5, Ban Khai Subdistrict, Ban Khai District, Rayong 21120, Thailand</p>
+    </div>
+
+    <div class="footer">
+      CutOut Seller &bull; Developed by Vrit &bull; On-Device E-Commerce Photo Studio &bull; All Rights Reserved
+    </div>
+  </div>
+</body>
+</html>
